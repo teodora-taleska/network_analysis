@@ -1,0 +1,140 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper, top=1.5cm, bottom=2cm, left=3cm, right=3cm]{geometry}
+
+% Packages
+\usepackage{amsmath, amssymb}   % Math support
+\usepackage{graphicx}           % For images
+\usepackage{hyperref}           % Clickable links
+\usepackage{listings}           % Code listings
+\usepackage{xcolor}             % Colors for code
+\usepackage[ruled,vlined]{algorithm2e} % Algorithm support
+\usepackage[backend=bibtex, style=numeric]{biblatex} % Numbered references
+\addbibresource{references.bib} % Load bibliography file
+
+% Fix text overflow issues
+\usepackage[none]{hyphenat}  % Disable normal hyphenation
+\sloppy  % Allow looser spacing to prevent overflow
+\setlength{\emergencystretch}{3em}  % Give extra space to prevent overflow
+\renewcommand{\ttdefault}{lmtt}  % More compact monospace font for code
+
+
+% Code listing style
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{gray!10},
+    commentstyle=\color{green!70!black},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{red},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    frame=single
+}
+\lstset{style=mystyle}
+
+% Title
+\title{Homework Assignment}
+\author{Your Name}
+\date{\today}
+\setlength{\emergencystretch}{3em}  % Allows some extra spacing for line breaking
+\sloppy  % Makes LaTeX less strict about line breaks
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 1}
+\subsection*{Question}
+Describe the problem statement here \cite{qu2023towards}.
+
+\subsection*{Solution}
+Here is a formula:
+\begin{equation}
+    E = mc^2
+\end{equation}
+
+Here is a citation \cite{somebook}.
+
+\subsection*{Algorithm}
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\SetAlgoLined
+\KwIn{Input description}
+\KwOut{Output description}
+$x \gets 0$\;
+\For{$i = 1$ to $n$}{
+    $x = x + i$\;
+}
+\Return $x$\;
+\caption{Example Algorithm}
+\end{algorithm}
+
+\subsection*{Code}
+\begin{lstlisting}[language=Python]
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+\end{lstlisting}
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu ante
+eget erat consequat sodales ut eu velit. Nullam odio metus, sagittis sit
+ amet quam et, vehicula pellentesque nulla. Nulla gravida eros ex, id
+sodales eros venenatis ac. Curabitur enim est, finibus vel urna ac,
+consectetur maximus elit. Pellentesque ullamcorper, lectus ac efficitur
+ultrices, ligula massa tempus metus, id aliquet purus odio sit amet
+lorem. Donec id nisi faucibus mauris luctus lobortis ac vitae ex. Nunc
+dapibus laoreet nibh. Pellentesque nec vestibulum nisi, sed scelerisque
+leo. Aliquam efficitur lectus vitae fringilla hendrerit. Nunc ac iaculis
+ neque, euismod placerat libero. Sed sollicitudin eget nisl quis tempor.
+ Aliquam erat volutpat. Nunc at libero quis tortor pretium euismod et ut
+ leo. Pellentesque condimentum risus vestibulum arcu pulvinar, quis
+aliquet lacus feugiat.
+
+
+
+
+Integer purus dolor, dapibus et tempor in, sodales ac felis. Cras eros
+nisi, congue sed tempor a, pretium vestibulum est. Duis scelerisque mi
+et maximus dapibus. Nulla ac est luctus, ultricies lectus eget, ultrices
+ eros. Fusce mauris mi, placerat eu vestibulum dignissim, ultricies
+posuere dolor. Nullam porta nisi fringilla luctus convallis. Cras risus
+ex, iaculis at dui in, venenatis dictum tellus.
+
+
+
+
+Vivamus cursus congue sem nec lobortis. Nunc et euismod leo. Mauris
+dictum imperdiet est quis suscipit. Ut fringilla sapien nibh, vel
+maximus elit vulputate in. In fringilla nulla ac augue ornare vehicula.
+Ut iaculis commodo est. Integer vel diam ullamcorper erat fringilla
+varius. Duis nec venenatis nibh, eget tristique enim. Nam purus massa,
+imperdiet in turpis eu, ullamcorper consequat nunc. Integer at dignissim
+ felis. Aenean non felis mollis, pharetra velit ut, malesuada sapien.
+Donec massa est, consectetur vitae luctus vehicula, consequat ut lorem.
+Aenean diam mi, condimentum dignissim libero sit amet, bibendum
+condimentum nulla. Nam finibus congue tempor. Fusce suscipit arcu a
+pulvinar tempus.
+
+
+
+
+Quisque sagittis quam eget diam iaculis, et tristique lectus maximus.
+Nulla tellus nunc, tempor sit amet metus convallis, pellentesque
+scelerisque felis. Nunc velit magna, bibendum sed pretium sit amet,
+viverra at nunc. In non ipsum sit amet tellus efficitur accumsan. Donec
+eget odio euismod, ultricies felis at, auctor turpis. Vivamus lacus
+nisi, aliquet in nisl eu, bibendum varius leo. Aenean nibh purus,
+fringilla a mauris eu, bibendum pulvinar lacus.
+
+
+
+\section*{Problem 2}
+% Add another problem here
+
+% References
+\printbibliography
+
+\end{document}
